@@ -5,7 +5,8 @@ using UnityEngine.Events;
 
 public class Questionary : MonoBehaviour
 {
-    [Header ("Data")]
+    [Header("Data")]
+    public int level;
     public int[] ID;
     [SerializeField] int life;
     public float waitTime;
@@ -80,6 +81,11 @@ public class Questionary : MonoBehaviour
     public void GameOver()
     {
         gameoverGO.SetActive(true);
+    }
+
+    public void FinishGame()
+    {
+        LoLManager.Instance.SaveProgress(level);
     }
 
 }
