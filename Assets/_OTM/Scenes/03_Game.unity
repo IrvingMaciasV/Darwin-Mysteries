@@ -305,7 +305,19 @@ MonoBehaviour:
   actualString: 
   initEvents:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1395515086}
+        m_TargetAssemblyTypeName: LangID, Assembly-CSharp
+        m_MethodName: SetNewID
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: You
+          m_BoolArgument: 0
+        m_CallState: 2
   endingEvents:
     m_PersistentCalls:
       m_Calls:
@@ -2361,7 +2373,19 @@ MonoBehaviour:
   actualString: 
   initEvents:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1395515086}
+        m_TargetAssemblyTypeName: LangID, Assembly-CSharp
+        m_MethodName: SetNewID
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: You
+          m_BoolArgument: 0
+        m_CallState: 2
   endingEvents:
     m_PersistentCalls:
       m_Calls:
@@ -4489,9 +4513,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 740279740}
-        m_TargetAssemblyTypeName: DigitalRuby.Tween.FadeGroup, Assembly-CSharp
-        m_MethodName: FadeOut
+      - m_Target: {fileID: 1606524470}
+        m_TargetAssemblyTypeName: Dialogue, Assembly-CSharp
+        m_MethodName: TriggerStart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4501,9 +4525,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1606524470}
-        m_TargetAssemblyTypeName: Dialogue, Assembly-CSharp
-        m_MethodName: TriggerStart
+      - m_Target: {fileID: 740279740}
+        m_TargetAssemblyTypeName: DigitalRuby.Tween.FadeGroup, Assembly-CSharp
+        m_MethodName: FadeOut
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4811,7 +4835,19 @@ MonoBehaviour:
   id: C1R5
   eventsInit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1395515086}
+        m_TargetAssemblyTypeName: LangID, Assembly-CSharp
+        m_MethodName: SetNewID
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Rodrigo
+          m_BoolArgument: 0
+        m_CallState: 2
   eventsFinish:
     m_PersistentCalls:
       m_Calls: []
@@ -5417,7 +5453,7 @@ MonoBehaviour:
   initEvents:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1020198139}
+      - m_Target: {fileID: 918449194}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -5557,7 +5593,19 @@ MonoBehaviour:
   id: C1R6
   eventsInit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1395515086}
+        m_TargetAssemblyTypeName: LangID, Assembly-CSharp
+        m_MethodName: SetNewID
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Rodrigo
+          m_BoolArgument: 0
+        m_CallState: 2
   eventsFinish:
     m_PersistentCalls:
       m_Calls: []
@@ -6366,11 +6414,23 @@ MonoBehaviour:
   id: C1R4
   eventsInit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1395515086}
+        m_TargetAssemblyTypeName: LangID, Assembly-CSharp
+        m_MethodName: SetNewID
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Rodrigo
+          m_BoolArgument: 0
+        m_CallState: 2
   eventsFinish:
     m_PersistentCalls:
       m_Calls: []
-  waitTime: 0.5
+  waitTime: 0
 --- !u!1 &1972607129
 GameObject:
   m_ObjectHideFlags: 0
