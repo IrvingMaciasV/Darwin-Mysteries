@@ -7,6 +7,7 @@ public class Questionary : MonoBehaviour
 {
     [Header("Data")]
     public int level;
+    public int initProgress;
     public int[] ID;
     [SerializeField] int life;
     public float waitTime;
@@ -55,6 +56,9 @@ public class Questionary : MonoBehaviour
     public void CorrectAnswer()
     {
         Debug.Log("Correct Answer");
+        initProgress++;
+        LoLManager.Instance.SaveProgress(initProgress);
+
         NextQuestion();
     }
 

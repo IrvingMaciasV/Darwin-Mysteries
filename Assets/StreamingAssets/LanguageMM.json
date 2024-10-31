@@ -11,6 +11,7 @@
     "en": {
         "play": "Play",
         "newGame": "New Game",
+        "back": "Back",
 
         "": "",
         "Rodrigo": "Rodrigo",
@@ -48,10 +49,10 @@
         "C1R6": "Next, let me show you the unicorn.",
         "C1P4": "That’s definitely a horn. I should analyze animals with horns.",
         "C1P6": "They weren't entirely wrong. While it's not a horse, it’s a member of the rhinoceros family, specifically the Elasmotherium sibiricum, better known as the Siberian Unicorn.",
-        "C1R8": "This is an old one; they say it’s some kind of predator, almost as if it came from another world.",
+        "C1R7": "This is an old one; they say it’s some kind of predator, almost as if it came from another world.",
         "C1P7": "It's a curious skull. It seems to have sturdy fangs, but also front teeth.",
         "C1P8": "By the shape of the skull, I can see it looks like a feline—it's a saber-toothed cat.",
-        "C1R7": "Thank you so much for helping me. I think this will be enough, but I have one last question.",
+        "C1R8": "Thank you so much for helping me. I think this will be enough, but I have one last question.",
         "C1R9": "There are no elephants, tigers, or rhinos around here. Why are these skeletons here?",
         "C1Q1": "Why are animals like these in the village?",
         "C1A1": "They were lost.",

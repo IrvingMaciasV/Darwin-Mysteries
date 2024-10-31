@@ -2310,7 +2310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85376ef628464e047a4061be23002f8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLOL: 1
+  isLOL: 0
   language: en
   level: 0
   musicVolume: 1
