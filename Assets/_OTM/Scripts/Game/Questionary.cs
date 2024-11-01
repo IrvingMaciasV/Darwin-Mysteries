@@ -6,9 +6,9 @@ using UnityEngine.Events;
 public class Questionary : MonoBehaviour
 {
     [Header("Data")]
-    public int level;
+    public int actualLevel;
     public int initProgress;
-    public int[] ID;
+    public int[] answerID;
     [SerializeField] int life;
     public float waitTime;
 
@@ -69,6 +69,8 @@ public class Questionary : MonoBehaviour
 
     public void NextQuestion()
     {
+
+
         Questions[it].SetActive(false);
         it++;
         if (it < Questions.Length)
@@ -76,6 +78,12 @@ public class Questionary : MonoBehaviour
             Questions[it].SetActive(true);
         }
 
+
+        if (ManagerGameData.Instance.isLOL)
+        {
+            initProgress++;
+            LoLManager.Instance.SaveProgress(initProgress);
+        }
         //else
         //{
         //    victoryGO.SetActive(true);
@@ -87,9 +95,9 @@ public class Questionary : MonoBehaviour
         gameoverGO.SetActive(true);
     }
 
-    public void FinishGame()
-    {
-        LoLManager.Instance.SaveProgress(level);
-    }
 
+    public void LevelCompleted()
+    {
+        ManagerGameData.Instance.SetLevel(actualLevel);
+    }
 }
