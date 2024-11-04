@@ -3615,6 +3615,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -256
       objectReference: {fileID: 0}
+    - target: {fileID: 2375328375824328454, guid: 025733dd6771aae44852b5a5e6a66a58, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1e51e1f57764c5d48b57d12fedaddb2f, type: 3}
     - target: {fileID: 2375328375824328458, guid: 025733dd6771aae44852b5a5e6a66a58, type: 3}
       propertyPath: questionary
       value: 
@@ -6806,6 +6810,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -256
       objectReference: {fileID: 0}
+    - target: {fileID: 2375328375824328454, guid: 025733dd6771aae44852b5a5e6a66a58, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 337856a1dd4fbff419935e48665dd777, type: 3}
     - target: {fileID: 2375328375824328458, guid: 025733dd6771aae44852b5a5e6a66a58, type: 3}
       propertyPath: questionary
       value: 
@@ -6932,6 +6940,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2375328375824328454, guid: 025733dd6771aae44852b5a5e6a66a58, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1f0b406dad9d0b2479f7f9d7630f62ab, type: 3}
     - target: {fileID: 2375328375824328458, guid: 025733dd6771aae44852b5a5e6a66a58, type: 3}
       propertyPath: questionary
       value: 
