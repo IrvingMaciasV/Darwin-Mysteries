@@ -3607,6 +3607,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2375328375824328448, guid: 025733dd6771aae44852b5a5e6a66a58, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2375328375824328449, guid: 025733dd6771aae44852b5a5e6a66a58, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -256
@@ -4913,7 +4917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc34e66ea9743140a06c0fc85ac457e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: C1R5
+  id: C2P5
   eventsInit:
     m_PersistentCalls:
       m_Calls:
@@ -6118,70 +6122,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1794681972
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1794681973}
-  - component: {fileID: 1794681974}
-  m_Layer: 0
-  m_Name: Dialogue NPC (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1794681973
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1794681972}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.948639, y: 428.92523, z: 0.7863252}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2034632536}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1794681974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1794681972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbc34e66ea9743140a06c0fc85ac457e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: C2P3
-  eventsInit:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1395515086}
-        m_TargetAssemblyTypeName: LangID, Assembly-CSharp
-        m_MethodName: SetNewID
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: You
-          m_BoolArgument: 0
-        m_CallState: 2
-  eventsFinish:
-    m_PersistentCalls:
-      m_Calls: []
-  waitTime: 0
 --- !u!1 &1797826774 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9206531737337193775, guid: ef1f077da6d74c74089baf4883658b81, type: 3}
@@ -6575,7 +6515,6 @@ Transform:
   m_Children:
   - {fileID: 1958842194}
   - {fileID: 1316229133}
-  - {fileID: 1794681973}
   m_Father: {fileID: 1723665979}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6600,7 +6539,7 @@ MonoBehaviour:
   lines:
   - {fileID: 1958842195}
   - {fileID: 1316229134}
-  - {fileID: 1794681974}
+  - {fileID: 0}
   actualString: 
   initEvents:
     m_PersistentCalls:
@@ -6712,7 +6651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc34e66ea9743140a06c0fc85ac457e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: C1P3
+  id: C2P4
   eventsInit:
     m_PersistentCalls:
       m_Calls: []
@@ -6859,6 +6798,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2375328375824328448, guid: 025733dd6771aae44852b5a5e6a66a58, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2375328375824328449, guid: 025733dd6771aae44852b5a5e6a66a58, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -256
@@ -6976,6 +6919,10 @@ PrefabInstance:
     - target: {fileID: 2375328375425513007, guid: 025733dd6771aae44852b5a5e6a66a58, type: 3}
       propertyPath: m_Name
       value: Gameplay Photos
+      objectReference: {fileID: 0}
+    - target: {fileID: 2375328375824328448, guid: 025733dd6771aae44852b5a5e6a66a58, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2375328375824328449, guid: 025733dd6771aae44852b5a5e6a66a58, type: 3}
       propertyPath: m_AnchoredPosition.x
