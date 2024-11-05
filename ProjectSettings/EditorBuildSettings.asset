@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/_OTM/Scenes/03_Levels.unity
     guid: 5209744df1a2d2041aa64dc2647a98a2
   - enabled: 1
+    path: Assets/_OTM/Scenes/04_Level 1.unity
+    guid: f432387a68bec1249a31062c9a12f215
+  - enabled: 1
     path: Assets/_OTM/Scenes/05_Level 2.unity
     guid: 49e502cf924f85847a8602ab46343731
   m_configObjects: {}
