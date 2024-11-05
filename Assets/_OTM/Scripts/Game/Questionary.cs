@@ -16,7 +16,8 @@ public class Questionary : MonoBehaviour
     [SerializeField] GameObject[] Questions;
     int it;
 
-    [Header ("Conditions")]
+    [Header("Conditions")]
+    [SerializeField] GameObject incorrectAnswer;
     [SerializeField] GameObject victoryGO;
     [SerializeField] GameObject gameoverGO;
 
@@ -65,6 +66,12 @@ public class Questionary : MonoBehaviour
     public void IncorrectAnswer()
     {
         Debug.Log("Incorrect Answer");
+        incorrectAnswer.SetActive(true);
+        life--;
+        if (life <= 0)
+        {
+            gameoverGO.SetActive(true);
+        }
     }
 
     public void NextQuestion()
