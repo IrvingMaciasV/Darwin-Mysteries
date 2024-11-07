@@ -2442,7 +2442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isLOL: 1
   language: en
-  level: 0
+  level: 1
   musicVolume: 1
   audio: {fileID: 0}
   _gameData:
@@ -6418,6 +6418,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1883286338}
+        m_TargetAssemblyTypeName: Questionary, Assembly-CSharp
+        m_MethodName: LevelCompleted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   endingEvents:
     m_PersistentCalls:
       m_Calls:
@@ -8431,6 +8443,10 @@ PrefabInstance:
       propertyPath: gameoverGO
       value: 
       objectReference: {fileID: 687265420}
+    - target: {fileID: 6962007882483538011, guid: eb72a3bdf58d8ed4f9653451957e9784, type: 3}
+      propertyPath: actualLevel
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6962007882483538011, guid: eb72a3bdf58d8ed4f9653451957e9784, type: 3}
       propertyPath: incorrectAnswer
       value: 

@@ -72,7 +72,6 @@ public class Dialogue : MonoBehaviour
 
     public void OnClickNextLine()
     {
-        Debug.Log("CLICK");
         if (canSkip)
         {
 
