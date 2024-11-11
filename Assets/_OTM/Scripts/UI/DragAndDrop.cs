@@ -77,6 +77,12 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
     void OnCollisionEnter2D(Collision2D collision)
     {
         // Detecta cuando el objeto arrastrado colisiona con otro
-        Debug.Log("Colisionó con: " + collision.gameObject.name);
+        Debug.Log("Colision? con: " + collision.gameObject.name);
+    }
+
+    public void StayInAnswerPosition(RectTransform newPos)
+    {
+        rectTransform.localScale = Vector3.one;
+        rectTransform.position = newPos.position;
     }
 }
