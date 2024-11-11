@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Questionary : MonoBehaviour
+public class QuestionaryTimeline : MonoBehaviour
 {
     [Header("Data")]
     public int actualLevel;
@@ -12,7 +12,8 @@ public class Questionary : MonoBehaviour
     [SerializeField] int life;
     public float waitTime;
 
-    [Header ("Question")]
+
+    [Header("Question")]
     [SerializeField] GameObject[] Questions;
     int it;
 
@@ -57,16 +58,20 @@ public class Questionary : MonoBehaviour
 
     public void CorrectAnswer()
     {
-        Debug.Log("Correct Answer");
+        Debug.Log("Correct Answer TL");
         initProgress++;
         LoLManager.Instance.SaveProgress(initProgress);
 
-        NextQuestion();
+        it++;
+        if (it == Questions.Length)
+        {
+            NextQuestion();
+        }
     }
 
     public void IncorrectAnswer()
     {
-        Debug.Log("Incorrect Answer");
+        Debug.Log("Incorrect Answer TL");
         incorrectAnswer.SetActive(true);
         life--;
         if (life <= 0)
@@ -83,14 +88,7 @@ public class Questionary : MonoBehaviour
             LoLManager.Instance.SaveProgress(initProgress);
         }
 
-        Questions[it].SetActive(false);
-        it++;
-        if (it < Questions.Length)
-        {
-            Questions[it].SetActive(true);
-        }
-
-        else
+        if (it >= Questions.Length)
         {
             EndEvents.Invoke();
         }
