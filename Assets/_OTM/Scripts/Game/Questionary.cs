@@ -12,6 +12,8 @@ public class Questionary : MonoBehaviour
     [SerializeField] int life;
     public float waitTime;
 
+    private bool isActive = false;
+
     [Header ("Question")]
     [SerializeField] GameObject[] Questions;
     int it;
@@ -45,6 +47,7 @@ public class Questionary : MonoBehaviour
 
     public void StartQuestionary()
     {
+        isActive = true;
         StartEvents.Invoke();
         StartCoroutine(WaitStarting());
     }
@@ -77,23 +80,28 @@ public class Questionary : MonoBehaviour
 
     public void NextQuestion()
     {
-        if (ManagerGameData.Instance.isLOL)
+        if (isActive)
         {
-            initProgress++;
-            LoLManager.Instance.SaveProgress(initProgress);
-        }
+            if (ManagerGameData.Instance.isLOL)
+            {
+                initProgress++;
+                LoLManager.Instance.SaveProgress(initProgress);
+            }
 
-        Questions[it].SetActive(false);
-        it++;
-        if (it < Questions.Length)
-        {
-            Questions[it].SetActive(true);
-        }
+            Questions[it].SetActive(false);
+            it++;
+            if (it < Questions.Length)
+            {
+                Questions[it].SetActive(true);
+            }
 
-        else
-        {
-            EndEvents.Invoke();
+            else
+            {
+                EndEvents.Invoke();
+                isActive = false;
+            }
         }
+        
     }
 
     public void GameOver()

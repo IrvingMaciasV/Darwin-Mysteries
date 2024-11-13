@@ -84,5 +84,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
     {
         rectTransform.localScale = Vector3.one;
         rectTransform.position = newPos.position;
+        enabled = false;
+        Answer.IncorrectEvent -= ReturnPosition;
     }
 }
