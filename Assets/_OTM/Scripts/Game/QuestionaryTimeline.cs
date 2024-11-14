@@ -34,6 +34,18 @@ public class QuestionaryTimeline : MonoBehaviour
         Answer.IncorrectEvent += IncorrectAnswer;
     }
 
+    private void OnDisable()
+    {
+        Answer.CorrectEvent -= CorrectAnswer;
+        Answer.IncorrectEvent -= IncorrectAnswer;
+    }
+
+    private void OnDestroy()
+    {
+        Answer.CorrectEvent -= CorrectAnswer;
+        Answer.IncorrectEvent -= IncorrectAnswer;
+    }
+
     // Start is called before the first frame update
     void Start()
     {

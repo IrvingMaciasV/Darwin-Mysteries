@@ -241,7 +241,7 @@ public class LoLManager : MonoBehaviour
         }
 
         // Load Dev Language File from StreamingAssets
-        string langFilePath = Path.Combine(Application.streamingAssetsPath, "languageMM.json");
+        string langFilePath = Path.Combine(Application.streamingAssetsPath, "language.json");
         if (File.Exists(langFilePath))
         {
             string langDataAsJson = File.ReadAllText(langFilePath);

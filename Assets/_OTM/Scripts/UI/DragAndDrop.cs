@@ -31,6 +31,17 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
         Answer.IncorrectEvent += ReturnPosition;
     }
 
+
+    private void OnDisable()
+    {
+        Answer.IncorrectEvent -= ReturnPosition;
+    }
+
+    private void OnDestroy()
+    {
+        Answer.IncorrectEvent -= ReturnPosition;
+    }
+
     public void OnPointerDown(PointerEventData eventData)
     {
         // Optionally handle logic when dragging starts

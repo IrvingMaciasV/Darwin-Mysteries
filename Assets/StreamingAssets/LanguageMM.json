@@ -13,6 +13,7 @@
         "newGame": "New Game",
         "back": "Back",
         "return": "Return",
+        "Credits": "Credits",
 
         "": "",
         "Rodrigo": "Rodrigo",
@@ -23,12 +24,16 @@
         "Level1": "Level 1",
         "Level2": "Level 2",
         "Level3": "Level 3",
+        "Level4": "Level 4",
 
         "welcome": "Welcome!",
         "Next": "Next",
         "continue": "Continue",
-        "lost": "You Lose",
+        "youLose": "You Lose",
         "win": "You Win!",
+        "Programming": "Programming",
+        "Art": "Art",
+        "Color": "Color",
 
         "C1N1": "A long time ago, I lived in a village where my friend Rodrigo lived. We were great childhood friends.",
         "C1N2": "As time passed, I grew up and had to move away to complete my studies in paleontology.",

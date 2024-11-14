@@ -397,7 +397,7 @@ MonoBehaviour:
   initialPos: {x: 0, y: 0, z: 0}
   positions:
   - {fileID: 260999829}
-  duration: 0
+  duration: 1
   finishEvents:
     m_PersistentCalls:
       m_Calls: []
@@ -624,7 +624,7 @@ RectTransform:
   - {fileID: 35861711}
   - {fileID: 1048979706}
   m_Father: {fileID: 1406299575}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -921,9 +921,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 747dda216c97cf64cb62b7cd7552523c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 323f8777fef21a84ebdc3862adfe408d, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1384,7 +1384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7766734830993380184, guid: ef1f077da6d74c74089baf4883658b81, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -51
       objectReference: {fileID: 0}
     - target: {fileID: 9206531736605230354, guid: ef1f077da6d74c74089baf4883658b81, type: 3}
       propertyPath: m_Pivot.x
@@ -2106,7 +2106,7 @@ RectTransform:
   m_Children:
   - {fileID: 667983481}
   m_Father: {fileID: 1406299575}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4730,6 +4730,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!1 &1080728962 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9206531738059922260, guid: ef1f077da6d74c74089baf4883658b81, type: 3}
+  m_PrefabInstance: {fileID: 263858491}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1083127889
 GameObject:
   m_ObjectHideFlags: 0
@@ -6034,6 +6039,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1080728962}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 95889173}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   waitTime: 1
 --- !u!1 &1297531554
 GameObject:
@@ -6560,7 +6589,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1406299575}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -6583,7 +6612,19 @@ MonoBehaviour:
   duration: 1
   eventHide:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1389001936}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   eventShow:
     m_PersistentCalls:
       m_Calls:
@@ -6837,11 +6878,11 @@ RectTransform:
   m_Children:
   - {fileID: 1299281068}
   - {fileID: 1070422355}
-  - {fileID: 2026018371}
-  - {fileID: 430691947}
   - {fileID: 197069941}
   - {fileID: 1480492342}
   - {fileID: 1389001937}
+  - {fileID: 2026018371}
+  - {fileID: 430691947}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6983,7 +7024,7 @@ RectTransform:
   - {fileID: 1207106476}
   - {fileID: 263858492}
   m_Father: {fileID: 1406299575}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -8361,7 +8402,7 @@ RectTransform:
   m_Children:
   - {fileID: 230365636}
   m_Father: {fileID: 1406299575}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -8387,7 +8428,19 @@ MonoBehaviour:
       m_Calls: []
   eventShow:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1776953515}
+        m_TargetAssemblyTypeName: QuestionaryTimeline, Assembly-CSharp
+        m_MethodName: LevelCompleted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!225 &2026018373
 CanvasGroup:
   m_ObjectHideFlags: 0

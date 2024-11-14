@@ -3285,9 +3285,9 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!1 &950095333 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4296029134760698401, guid: ef1f077da6d74c74089baf4883658b81, type: 3}
+--- !u!224 &950095334 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7766734830993380184, guid: ef1f077da6d74c74089baf4883658b81, type: 3}
   m_PrefabInstance: {fileID: 918449187}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1020198134
@@ -4081,6 +4081,10 @@ PrefabInstance:
       propertyPath: id
       value: C1P4
       objectReference: {fileID: 0}
+    - target: {fileID: 1083765164, guid: 025733dd6771aae44852b5a5e6a66a58, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1537966263603167095, guid: 025733dd6771aae44852b5a5e6a66a58, type: 3}
       propertyPath: StartEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -4653,10 +4657,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0313120ebb3e821488ab54d61a994c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obj: {fileID: 950095333}
+  obj: {fileID: 1243237674}
   initialPos: {x: 0, y: 0, z: 0}
-  positions: []
-  duration: 0
+  positions:
+  - {fileID: 950095334}
+  duration: 1
   finishEvents:
     m_PersistentCalls:
       m_Calls: []
@@ -4926,9 +4931,9 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -7435,6 +7440,10 @@ PrefabInstance:
       propertyPath: id
       value: C1P8
       objectReference: {fileID: 0}
+    - target: {fileID: 1083765164, guid: 025733dd6771aae44852b5a5e6a66a58, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1537966263603167095, guid: 025733dd6771aae44852b5a5e6a66a58, type: 3}
       propertyPath: FinishEvents.m_PersistentCalls.m_Calls.Array.size
       value: 0
@@ -7609,6 +7618,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1070422355}
     m_Modifications:
+    - target: {fileID: 1083765164, guid: 025733dd6771aae44852b5a5e6a66a58, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1537966263603167095, guid: 025733dd6771aae44852b5a5e6a66a58, type: 3}
       propertyPath: StartEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
