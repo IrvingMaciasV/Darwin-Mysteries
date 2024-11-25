@@ -12,7 +12,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
 
     private Vector2 originalPosition;
     [SerializeField] bool onDrag;
-    private bool hasColision;
+    private bool hasColision = false;
 
 
     public delegate void Collision (DragAndDrop gameObject);

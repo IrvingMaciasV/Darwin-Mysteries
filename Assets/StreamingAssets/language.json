@@ -125,6 +125,8 @@
         "Level3": "Level 3",
         "Level4": "Level 4",
         "welcome": "Welcome!",
+        "tutoTitle": "Tutorial",
+        "tutoText": "Drag the answer (right section) and drop it to the answer (left), you will have three oportunities or you will lose the level.",
         "Next": "Next",
         "continue": "Continue",
         "youLose": "You Lose",
