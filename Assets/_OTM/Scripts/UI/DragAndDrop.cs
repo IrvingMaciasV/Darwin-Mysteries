@@ -12,6 +12,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
 
     private Vector2 originalPosition;
     [SerializeField] bool onDrag;
+    private bool hasColision;
 
 
     public delegate void Collision (DragAndDrop gameObject);
@@ -58,11 +59,17 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
     public void OnPointerUp(PointerEventData eventData)
     {
         onDrag = false;
+
+        if (!hasColision)
+        {
+            ReturnPosition();
+        }
     }
 
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+        hasColision = true;
         if (!onDrag && collision.tag != "DragObject")
         {
             Debug.Log(name + " Trigger activado con: " + collision.gameObject.name);
@@ -73,7 +80,10 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
             }
 
             else
+            {
+                hasColision = false;
                 ReturnPosition();
+            }
         }
 
     }
