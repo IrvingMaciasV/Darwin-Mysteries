@@ -9,7 +9,8 @@ public class QuestionaryTimeline : MonoBehaviour
     public int actualLevel;
     public int initProgress;
     public int[] answerID;
-    [SerializeField] int life;
+    [SerializeField] Health health;
+    //[SerializeField] int life;
     public float waitTime;
 
     bool isActive = true;
@@ -60,6 +61,7 @@ public class QuestionaryTimeline : MonoBehaviour
 
     public void StartQuestionary()
     {
+        health.gameObject.SetActive(true);
         isActive = true;
         StartEvents.Invoke();
         StartCoroutine(WaitStarting());
@@ -93,11 +95,7 @@ public class QuestionaryTimeline : MonoBehaviour
     {
         Debug.Log("Incorrect Answer TL");
         incorrectAnswer.SetActive(true);
-        life--;
-        if (life <= 0)
-        {
-            gameoverGO.SetActive(true);
-        }
+        health.IncorrectAnswer();
     }
 
     public void NextQuestion()
