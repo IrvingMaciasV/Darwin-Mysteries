@@ -6012,7 +6012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aacd422745758e42a8e8b120071044a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: win
+  id: win2
 --- !u!114 &1278114406
 MonoBehaviour:
   m_ObjectHideFlags: 0
