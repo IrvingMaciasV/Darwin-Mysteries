@@ -1601,6 +1601,10 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 9206531737337193774, guid: ef1f077da6d74c74089baf4883658b81, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9206531737337193774, guid: ef1f077da6d74c74089baf4883658b81, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 25
       objectReference: {fileID: 0}
@@ -1665,7 +1669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aacd422745758e42a8e8b120071044a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 
+  id: You
 --- !u!1 &284208200
 GameObject:
   m_ObjectHideFlags: 0
@@ -4044,6 +4048,10 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 9206531737337193774, guid: ef1f077da6d74c74089baf4883658b81, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9206531737337193774, guid: ef1f077da6d74c74089baf4883658b81, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 25
       objectReference: {fileID: 0}
@@ -5653,6 +5661,10 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 9206531737337193774, guid: ef1f077da6d74c74089baf4883658b81, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9206531737337193774, guid: ef1f077da6d74c74089baf4883658b81, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 25
       objectReference: {fileID: 0}
@@ -5718,7 +5730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aacd422745758e42a8e8b120071044a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 
+  id: You
 --- !u!1 &1234375709
 GameObject:
   m_ObjectHideFlags: 0
