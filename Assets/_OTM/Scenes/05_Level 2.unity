@@ -3685,10 +3685,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1429002659}
-  - {fileID: 1781687748}
-  - {fileID: 1116431312}
+  m_Children: []
   m_Father: {fileID: 1723665979}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1023215300
@@ -4116,12 +4113,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116431311}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1023215299}
+  m_Father: {fileID: 1606524469}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1116431313
 MonoBehaviour:
@@ -4139,7 +4136,7 @@ MonoBehaviour:
   eventsInit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1020198140}
+      - m_Target: {fileID: 918449200}
         m_TargetAssemblyTypeName: LangID, Assembly-CSharp
         m_MethodName: SetNewID
         m_Mode: 5
@@ -6357,12 +6354,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1429002658}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1023215299}
+  m_Father: {fileID: 1606524469}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1429002660
 MonoBehaviour:
@@ -6380,7 +6377,7 @@ MonoBehaviour:
   eventsInit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1020198140}
+      - m_Target: {fileID: 918449200}
         m_TargetAssemblyTypeName: LangID, Assembly-CSharp
         m_MethodName: SetNewID
         m_Mode: 5
@@ -6571,6 +6568,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1429002659}
+  - {fileID: 1781687748}
+  - {fileID: 1116431312}
+  - {fileID: 1790527924}
   - {fileID: 1343948740}
   - {fileID: 424871094}
   - {fileID: 1205312671}
@@ -6597,6 +6598,10 @@ MonoBehaviour:
   waitTime: 2
   textSpeed: 0
   lines:
+  - {fileID: 1429002660}
+  - {fileID: 1781687749}
+  - {fileID: 1116431313}
+  - {fileID: 1790527923}
   - {fileID: 1343948741}
   - {fileID: 424871095}
   - {fileID: 1205312672}
@@ -7188,12 +7193,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1781687747}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1023215299}
+  m_Father: {fileID: 1606524469}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1781687749
 MonoBehaviour:
@@ -7211,7 +7216,7 @@ MonoBehaviour:
   eventsInit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1020198140}
+      - m_Target: {fileID: 918449200}
         m_TargetAssemblyTypeName: LangID, Assembly-CSharp
         m_MethodName: SetNewID
         m_Mode: 5
@@ -7238,6 +7243,70 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1790527922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1790527924}
+  - component: {fileID: 1790527923}
+  m_Layer: 0
+  m_Name: Dialogue (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1790527923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790527922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbc34e66ea9743140a06c0fc85ac457e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: C2Z1
+  eventsInit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 918449200}
+        m_TargetAssemblyTypeName: LangID, Assembly-CSharp
+        m_MethodName: SetNewID
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: You
+          m_BoolArgument: 0
+        m_CallState: 2
+  eventsFinish:
+    m_PersistentCalls:
+      m_Calls: []
+  waitTime: 0
+--- !u!4 &1790527924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790527922}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1606524469}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1797826774 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9206531737337193775, guid: ef1f077da6d74c74089baf4883658b81, type: 3}
@@ -8194,7 +8263,7 @@ PrefabInstance:
       objectReference: {fileID: 1046120740}
     - target: {fileID: 6962007882483538011, guid: eb72a3bdf58d8ed4f9653451957e9784, type: 3}
       propertyPath: Questions.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6962007882483538011, guid: eb72a3bdf58d8ed4f9653451957e9784, type: 3}
       propertyPath: Questions.Array.data[0]
@@ -8213,9 +8282,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 237697361}
     - target: {fileID: 6962007882483538011, guid: eb72a3bdf58d8ed4f9653451957e9784, type: 3}
+      propertyPath: EndEvents.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6962007882483538011, guid: eb72a3bdf58d8ed4f9653451957e9784, type: 3}
       propertyPath: StartEvents.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6962007882483538011, guid: eb72a3bdf58d8ed4f9653451957e9784, type: 3}
+      propertyPath: EndEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6962007882483538011, guid: eb72a3bdf58d8ed4f9653451957e9784, type: 3}
+      propertyPath: EndEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1606524470}
     - target: {fileID: 6962007882483538011, guid: eb72a3bdf58d8ed4f9653451957e9784, type: 3}
       propertyPath: StartEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 3
@@ -8241,6 +8322,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1883286339}
     - target: {fileID: 6962007882483538011, guid: eb72a3bdf58d8ed4f9653451957e9784, type: 3}
+      propertyPath: EndEvents.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6962007882483538011, guid: eb72a3bdf58d8ed4f9653451957e9784, type: 3}
+      propertyPath: EndEvents.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TriggerStart
+      objectReference: {fileID: 0}
+    - target: {fileID: 6962007882483538011, guid: eb72a3bdf58d8ed4f9653451957e9784, type: 3}
       propertyPath: StartEvents.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -8265,6 +8354,10 @@ PrefabInstance:
       value: WaitEvent
       objectReference: {fileID: 0}
     - target: {fileID: 6962007882483538011, guid: eb72a3bdf58d8ed4f9653451957e9784, type: 3}
+      propertyPath: EndEvents.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Dialogue, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6962007882483538011, guid: eb72a3bdf58d8ed4f9653451957e9784, type: 3}
       propertyPath: StartEvents.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: DigitalRuby.Tween.MoveUIElement, Assembly-CSharp
       objectReference: {fileID: 0}
@@ -8283,6 +8376,10 @@ PrefabInstance:
     - target: {fileID: 6962007882483538011, guid: eb72a3bdf58d8ed4f9653451957e9784, type: 3}
       propertyPath: StartEvents.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6962007882483538011, guid: eb72a3bdf58d8ed4f9653451957e9784, type: 3}
+      propertyPath: EndEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6962007882483538011, guid: eb72a3bdf58d8ed4f9653451957e9784, type: 3}
       propertyPath: StartEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
