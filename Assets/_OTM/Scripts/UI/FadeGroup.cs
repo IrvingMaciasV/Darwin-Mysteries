@@ -14,6 +14,10 @@ namespace DigitalRuby.Tween
         [SerializeField] UnityEvent eventHide;
         [SerializeField] UnityEvent eventShow;
 
+        private float timeElapsed;
+        private bool isFading = false;
+        private bool isFadingIn;
+
         private void Awake()
         {
             group = GetComponent<CanvasGroup>();
@@ -27,6 +31,7 @@ namespace DigitalRuby.Tween
             }
         }
 
+        /*
         public void FadeIn()
         {
             if (group == null)
@@ -70,7 +75,7 @@ namespace DigitalRuby.Tween
             group.gameObject.Tween(group, 1, 0, duration, TweenScaleFunctions.Linear, updateCirclePos);
             StartCoroutine(Events(false));
         }
-
+        
         private IEnumerator Events(bool isShowing)
         {
             yield return new WaitForSeconds(duration);
@@ -84,10 +89,78 @@ namespace DigitalRuby.Tween
                 eventHide.Invoke();
             }
         }
+        */
 
         public void ChangeDuration(float d)
         {
             duration = d;
+        }
+
+
+
+        private void Events(bool isShowing)
+        {
+
+            if (isShowing)
+            {
+                eventShow.Invoke();
+            }
+            else
+            {
+                eventHide.Invoke();
+            }
+        }
+
+        public void FadeIn()
+        {
+            isFading = true;
+            isFadingIn = true;
+            timeElapsed = 0;
+
+            group.alpha = 0;
+        }
+
+        public void FadeOut()
+        {
+            isFading = true;
+            isFadingIn = false;
+            timeElapsed = 0;
+
+            group.alpha = 1;
+        }
+
+        private void Update()
+        {
+            if (isFading)
+            {
+                Fading();
+            }
+        }
+
+
+        void Fading()
+        {
+            timeElapsed += Time.deltaTime;
+
+            // Calculate interpolation factor (t)
+            float t = timeElapsed / duration;
+
+            if (isFadingIn)
+            {
+                group.alpha = Mathf.Lerp(0f, 1f, t);
+            }
+
+            else
+            {
+                group.alpha = Mathf.Lerp(1f, 0f, t);
+            }
+
+            // Optional: Disable script once fade is complete
+            if (timeElapsed >= duration)
+            {
+                isFading = false;
+                Events(isFadingIn);
+            }
         }
     }
 }
