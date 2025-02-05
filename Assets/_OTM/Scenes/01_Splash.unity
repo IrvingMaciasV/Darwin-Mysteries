@@ -778,6 +778,7 @@ MonoBehaviour:
     musicVolume: 1
     progress: 0
     dictionaryGame: []
+  progressMax: 17
   continueButton: {fileID: 0}
   newGameButton: {fileID: 0}
   events: {fileID: 0}
@@ -797,7 +798,7 @@ MonoBehaviour:
   language: en
   level: 0
   musicVolume: 1
-  audio: {fileID: 0}
+  audio: {fileID: 1229211053}
   _gameData:
     language: en
     levels: 0

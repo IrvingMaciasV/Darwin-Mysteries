@@ -322,6 +322,7 @@ MonoBehaviour:
   positions:
   - {fileID: 220212906}
   duration: 0.5
+  timeElapsed: 0
   finishEvents:
     m_PersistentCalls:
       m_Calls: []
@@ -2662,6 +2663,7 @@ MonoBehaviour:
   positions:
   - {fileID: 1020198136}
   duration: 1.5
+  timeElapsed: 0
   finishEvents:
     m_PersistentCalls:
       m_Calls: []
@@ -4204,6 +4206,7 @@ MonoBehaviour:
   initialPos: {x: 0, y: 0, z: 0}
   positions: []
   duration: 0
+  timeElapsed: 0
   finishEvents:
     m_PersistentCalls:
       m_Calls: []
@@ -6578,6 +6581,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1070422355}
     m_Modifications:
+    - target: {fileID: 4902075838301383344, guid: e02765a5ec4edef42a8d5158ea114e65, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902075838502801502, guid: e02765a5ec4edef42a8d5158ea114e65, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4902075839246270174, guid: e02765a5ec4edef42a8d5158ea114e65, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -6665,6 +6676,10 @@ PrefabInstance:
     - target: {fileID: 4902075839246270175, guid: e02765a5ec4edef42a8d5158ea114e65, type: 3}
       propertyPath: m_Name
       value: Gameplay Timeline
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902075839407558800, guid: e02765a5ec4edef42a8d5158ea114e65, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

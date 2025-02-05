@@ -518,6 +518,7 @@ MonoBehaviour:
   positions:
   - {fileID: 2059053269}
   duration: 1
+  timeElapsed: 0
   finishEvents:
     m_PersistentCalls:
       m_Calls: []
@@ -805,6 +806,7 @@ MonoBehaviour:
   positions:
   - {fileID: 220212906}
   duration: 0.5
+  timeElapsed: 0
   finishEvents:
     m_PersistentCalls:
       m_Calls: []
@@ -1750,6 +1752,7 @@ GameObject:
   m_Component:
   - component: {fileID: 284208201}
   - component: {fileID: 284208202}
+  - component: {fileID: 284208203}
   m_Layer: 0
   m_Name: Dialogues (4)
   m_TagString: Untagged
@@ -1844,6 +1847,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 2026018370}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 284208203}
+        m_TargetAssemblyTypeName: GameCompleted, Assembly-CSharp
+        m_MethodName: EndGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &284208203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284208200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebe98866b33aa48b68e5c011392b8114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &339648744
 GameObject:
   m_ObjectHideFlags: 0
@@ -3530,6 +3569,7 @@ MonoBehaviour:
     musicVolume: 1
     progress: 0
     dictionaryGame: []
+  progressMax: 0
   continueButton: {fileID: 0}
   newGameButton: {fileID: 0}
   events: {fileID: 0}
@@ -3928,6 +3968,7 @@ MonoBehaviour:
   positions:
   - {fileID: 1020198136}
   duration: 1.5
+  timeElapsed: 0
   finishEvents:
     m_PersistentCalls:
       m_Calls: []
@@ -8979,6 +9020,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -112.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4902075838301383344, guid: e02765a5ec4edef42a8d5158ea114e65, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4902075838301383346, guid: e02765a5ec4edef42a8d5158ea114e65, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -8994,6 +9039,10 @@ PrefabInstance:
     - target: {fileID: 4902075838502801489, guid: e02765a5ec4edef42a8d5158ea114e65, type: 3}
       propertyPath: ID
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902075838502801502, guid: e02765a5ec4edef42a8d5158ea114e65, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4902075838504344359, guid: e02765a5ec4edef42a8d5158ea114e65, type: 3}
       propertyPath: m_text

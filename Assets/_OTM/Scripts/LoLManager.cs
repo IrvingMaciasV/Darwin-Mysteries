@@ -14,6 +14,7 @@ public class LoLManager : MonoBehaviour
     JSONNode _langNode;
     string _langCode;
     public GameData gameDataLOL;
+    public int progressMax;
     Coroutine _feedbackMethod;
     [SerializeField] Button continueButton, newGameButton;
     bool _init;
@@ -117,14 +118,10 @@ public class LoLManager : MonoBehaviour
         if (p > gameDataLOL.progress)
             gameDataLOL.progress = p;
 
-        if (gameDataLOL.progress <= 11)
+        if (gameDataLOL.progress <= progressMax)
         {
-            LOLSDK.Instance.SubmitProgress(0, gameDataLOL.progress, 11);
+            LOLSDK.Instance.SubmitProgress(0, gameDataLOL.progress, progressMax);
             Save();
-            if (gameDataLOL.progress == 11)
-            {
-                CompletedGame();
-            }
         }
         
     }
